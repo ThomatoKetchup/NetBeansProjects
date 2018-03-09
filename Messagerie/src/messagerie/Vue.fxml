@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.beans.property.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.Color?>
+
+
+
+
+<VBox spacing='10' prefWidth='900' prefHeight='300' fx:controller='messagerie.Controler' xmlns:fx='http://javafx.com/fxml'>
+    <fx:define>
+        <ToggleGroup fx:id='toggleGroupIn'/>
+        <ToggleGroup fx:id='toggleGroupOut'/>
+    </fx:define> 
+    
+   <Label text="Traduction"/>
+   
+    <StackPane>  <!-- c'est le trait-->
+        <Rectangle fill="TRANSPARENT" stroke="GRAY" width="900" height="42" />
+    </StackPane>
+    
+    
+    <HBox>
+        
+        <VBox>
+            <HBox spacing='2'>
+                <ToggleButton text='Anglais' toggleGroup='$toggleGroupIn'/>
+                <ToggleButton text='Francais' toggleGroup='$toggleGroupIn'/>
+                <ToggleButton text='Allemand' toggleGroup='$toggleGroupIn'/>
+                <!-- Completez le code -->
+                     
+            </HBox>
+            <TextArea fx:id="inputTextArea" prefWidth="395.0" prefHeight="194.0" />   
+
+            
+        </VBox>
+        
+        <VBox>
+                    <HBox spacing='2'>
+            <ToggleButton text='Anglais' toggleGroup='$toggleGroupOut'/>
+            <ToggleButton text='Francais' toggleGroup='$toggleGroupOut'/>
+            <ToggleButton text='Allemand' toggleGroup='$toggleGroupOut'/>
+            <!-- Completez le code -->
+            
+        </HBox> 
+    <TextArea fx:id="outputTextArea" layoutX="13.0" layoutY="194.0" prefHeight="194.0" prefWidth="395.0" wrapText="true" />
+
+            
+        </VBox>
+                    <Button text="Traduire" onAction="#processTranslation"/>
+                    
+
+        
+         
+    </HBox>
+
+
+    
+
+</VBox>
+
+

@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 nov. 2017, 13:29:01
+    Author     : nguye
+*/
+
+.root
+​{
+    -fx-background-color:black;
+}
+
+.button{    
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+.label
+{
+    -fx-text-fill: red;
+    -fx-font-size:18;
+}

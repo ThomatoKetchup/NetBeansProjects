@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.beans.property.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.Color?>
+
+
+
+
+<VBox spacing='10' prefWidth='900' prefHeight='300' fx:controller='traducteur.FXMLDocumentController' xmlns:fx='http://javafx.com/fxml'>
+    <HBox spacing='50'>
+        <TextField text="Rechercher un message" prefWidth="400" prefHeight="10" />
+        <Label text="Trier par"/>
+            
+        <Button text="Ecrire un nouveau message" onAction="#processMessage"/>      
+    </HBox>
+    
+    <AnchorPane>  <!-- c'est le trait-->
+        <Rectangle fill="TRANSPARENT" stroke="GRAY" width="400" height="500" />
+    </AnchorPane>
+
+
+    
+
+</VBox>
+
+
