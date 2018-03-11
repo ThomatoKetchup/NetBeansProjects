@@ -30,7 +30,7 @@ public class App {
         }
     }
 
-    public void calculer() /*throws ExceptionOperationInconnu*/ {
+    public void calculer() {
         GestionnaireCalculatrice g = new GestionnaireCalculatrice();
         float v1 = g.readFloat();
         float v2 = g.readFloat();
